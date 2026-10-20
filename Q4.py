@@ -1,0 +1,12 @@
+found_part4 = False
+for alyssa in range(11):
+    for ben in range(11):
+        for cindy in range(11):
+            if (ben == alyssa - 2) and (cindy == alyssa * 2) and (alyssa + ben + cindy == 10):
+                print(f"Tickets sold by Alyssa: {alyssa}")
+                found_part4 = True
+                break
+        if found_part4:
+            break
+    if found_part4:
+        break
